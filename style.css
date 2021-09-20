@@ -36,6 +36,12 @@ header {
   margin: 0;
   border-bottom: #ffffff dashed;
 }
+.page {
+  display: none;
+}
+.page.current {
+  display: block;
+}
 h1 {
   letter-spacing: 3px;
   font-size: 5vw;
@@ -44,10 +50,17 @@ h1 {
   font-family: "coming soon";
 }
 h2 {
-  margin-top: 2vw;
+  margin-top: 4vw;
   text-align: center;
   font-family: "coming soon";
-  font-size: 2.5vw;
+  font-size: 3.5vw;
+  color: var(--content-font-color);
+}
+h3 {
+  margin-top: 1vw;
+  text-align: center;
+  font-family: "coming soon";
+  font-size: 2vw;
 }
 p {
   font-size: 2vw;
@@ -226,7 +239,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   font-family: "coming soon";
-  font-size: 3vw;
+  font-size: 2vw;
   color: var(--content-font-color);
 }
 label:focus,

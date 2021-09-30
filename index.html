@@ -12,131 +12,30 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <div class="page" id="home">
+      <div class="page current" id="home">
         <h2>Questions</h2>
-        <div class="dark question-card">
-          <h3 class="question-card__title" id="q1">Question 1</h3>
-          <button class="bookmark">
-            <img
-              class="bookmark-icon"
-              src="images/white-bookmark.png"
-              alt="bookmark"
-            />
-          </button>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            eius cupiditate sunt ut maxime amet omnis vero exercitationem sed
-            similique quidem excepturi dignissimos deserunt vitae quo assumenda
-            doloribus, aut eaque.
-          </p>
-          <button class="collapse-answer-button" type="button">
-            Show Answer
-          </button>
-          <p class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugit
-            mollitia repellat ab excepturi veniam perferendis dolor voluptatibus
-            dolorum? Similique officiis voluptatem ipsum alias asperiores
-            accusamus cumque voluptatum minus dolor.
-          </p>
-          <ul>
-            <li class="tag">tag1</li>
-            <li class="tag">tag2</li>
-            <li class="tag">tag3</li>
-            <li class="tag">tag4</li>
-          </ul>
-        </div>
-        <div class="dark question-card">
-          <h3 class="question-card__title" id="q2">Question 2</h3>
-          <button class="bookmark">
-            <img
-              class="bookmark-icon"
-              src="images/white-bookmark.png"
-              alt="bookmark"
-            />
-          </button>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            eius cupiditate sunt ut maxime amet omnis vero exercitationem sed
-            similique quidem excepturi dignissimos deserunt vitae quo assumenda
-            doloribus, aut eaque.
-          </p>
-          <button class="collapse-answer-button" type="button">
-            Show Answer
-          </button>
-          <p class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            voluptas explicabo accusamus, porro ipsum a atque distinctio. Velit,
-            fugiat sapiente. Placeat, dolores quibusdam fuga consequatur
-            voluptatum qui ipsa totam debitis.
-          </p>
-          <ul>
-            <li class="tag">tag1</li>
-            <li class="tag">tag2</li>
-            <li class="tag">tag3</li>
-            <li class="tag">tag4</li>
-          </ul>
-        </div>
-        <div class="dark question-card">
-          <h3 class="question-card__title" id="q3">Question 3</h3>
-          <button class="bookmark">
-            <img
-              class="bookmark-icon"
-              src="images/white-bookmark.png"
-              alt="bookmark"
-            />
-          </button>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            eius cupiditate sunt ut maxime amet omnis vero exercitationem sed
-            similique quidem excepturi dignissimos deserunt vitae quo assumenda
-            doloribus, aut eaque.
-          </p>
-          <button class="collapse-answer-button" type="button">
-            Show Answer
-          </button>
-          <p class="answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-            aliquid architecto sed possimus saepe nostrum labore adipisci
-            quaerat corporis non. Magnam veritatis esse odio nemo impedit
-            repellendus necessitatibus incidunt! Culpa.
-          </p>
-          <ul>
-            <li class="tag">tag1</li>
-            <li class="tag">tag2</li>
-            <li class="tag">tag3</li>
-            <li class="tag">tag4</li>
-          </ul>
-        </div>
-        <div class="dark question-card">
-          <h3 class="question-card__title" id="q4">Question 4</h3>
-          <button class="bookmark">
-            <img
-              class="bookmark-icon"
-              src="images/white-bookmark.png"
-              alt="bookmark"
-            />
-          </button>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            eius cupiditate sunt ut maxime amet omnis vero exercitationem sed
-            similique quidem excepturi dignissimos deserunt vitae quo assumenda
-            doloribus, aut eaque.
-          </p>
-          <button class="collapse-answer-button" type="button">
-            Show Answer
-          </button>
-          <p class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, illum
-            sint modi iusto molestias doloremque nostrum animi recusandae alias
-            laboriosam sapiente rem est quaerat odit beatae officia magnam
-            consectetur eligendi.
-          </p>
-          <ul>
-            <li class="tag">tag1</li>
-            <li class="tag">tag2</li>
-            <li class="tag">tag3</li>
-            <li class="tag">tag4</li>
-          </ul>
+        <div id="homeQuestionContainer">
+          <div class="dark question-card">
+            <h3 class="question-card__title">Question</h3>
+            <button class="bookmark">
+              <img
+                class="bookmark-icon"
+                src="images/white-bookmark.png"
+                alt="bookmark"
+              />
+            </button>
+            <p></p>
+            <button class="collapse-answer-button" type="button">
+              Show Answer
+            </button>
+            <p class="answer"></p>
+            <ul>
+              <li class="tag">tag1</li>
+              <li class="tag">tag2</li>
+              <li class="tag">tag3</li>
+              <li class="tag">tag4</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="page" id="create-question">
@@ -167,7 +66,7 @@
             id="newTag"
             name="tag"
             multiple
-            placeholder="tag1, tag2, .."
+            placeholder="tag1 tag2 tag3 tag4"
           ></textarea>
           <br />
           <br />
@@ -176,6 +75,29 @@
       </div>
       <div class="page" id="bookmarks">
         <h2>bookmarks</h2>
+        <div id="bookmarkQuestionContainer">
+          <div class="dark question-card">
+            <h3 class="question-card__title">Question</h3>
+            <button class="bookmark">
+              <img
+                class="bookmark-icon"
+                src="images/white-bookmark.png"
+                alt="bookmark"
+              />
+            </button>
+            <p></p>
+            <button class="collapse-answer-button" type="button">
+              Show Answer
+            </button>
+            <p class="answer"></p>
+            <ul>
+              <li class="tag">tag1</li>
+              <li class="tag">tag2</li>
+              <li class="tag">tag3</li>
+              <li class="tag">tag4</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="page" id="profile">
         <h2>My Profile</h2>
@@ -207,12 +129,10 @@
       </div>
     </main>
     <footer class="dark">
-      <nav class="active">
+      <nav>
         <a href="#home" class="footer-nav-button link-home" title="home"
           ><img class="nav-button-icon" src="images/home.png" alt="home"
         /></a>
-      </nav>
-      <nav>
         <a
           href="#create-question"
           class="footer-nav-button link-create-question"
@@ -222,8 +142,6 @@
             src="images/add-question.png"
             alt="create"
         /></a>
-      </nav>
-      <nav>
         <a
           href="#bookmarks"
           class="footer-nav-button link-bookmarks"
@@ -233,8 +151,6 @@
             src="images/white-bookmark.png"
             alt="bookmarks"
         /></a>
-      </nav>
-      <nav>
         <a
           href="#profile"
           class="footer-nav-button link-profile"

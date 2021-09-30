@@ -74,6 +74,10 @@ p {
   top: -0.6em;
   left: 70vw;
 }
+.bookmark-black {
+  background: url(images/black-bookmark.png);
+  background-size: 6vw;
+}
 .bookmark-icon {
   width: 5vw;
 }
@@ -135,7 +139,7 @@ footer {
   background: var(--button-tag-color);
   color: #fff;
   border: #fff dotted;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 7px;
   transition-property: width;
   transition-duration: 0.5s;
@@ -157,7 +161,12 @@ footer {
 .submit-button:hover {
   background: var(--button-color-darker);
   border: #fff solid;
-  width: 25vw;
+  width: 20vw;
+}
+.answer {
+  display: none;
+  overflow: hidden;
+  padding: 1vw;
 }
 .tag,
 .skills {
@@ -178,11 +187,13 @@ ul {
 }
 .nav-button-icon {
   width: 3em;
-}
-nav {
   opacity: 50%;
 }
-nav:active {
+.footer-nav-button {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+.footer-nav-button:active {
   opacity: 90%;
   transform: scale(1.5);
 }
@@ -210,8 +221,11 @@ nav:active {
   content: " ☁️";
 }
 .active {
+  transform: scale(1.2);
+}
+.active-icon {
   opacity: 80%;
-  transform: scale(1.5);
+  transform: scale(1.3);
   /* background: var(--header-footer-color2); */
 }
 form {
@@ -239,7 +253,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   font-family: "coming soon";
-  font-size: 2vw;
+  font-size: 3vw;
   color: var(--content-font-color);
 }
 label:focus,
@@ -269,6 +283,37 @@ textarea:focus {
   textarea {
     background: var(--background-color-dark3);
     border: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  p,
+  .collapse-answer-button,
+  .logout-button,
+  .submit-button,
+  .tag,
+  .skills {
+    font-size: 3vw;
+  }
+  .collapse-answer-button:hover,
+  .logout-button:hover,
+  .submit-button:hover {
+    background: var(--button-tag-color);
+    color: #fff;
+    border: #fff dotted;
+    transform: none;
+  }
+  .collapse-answer-button:active,
+  .logout-button:active,
+  .submit-button:active {
+    background: var(--button-color-darker);
+    border: #fff solid;
+    width: 20vw;
   }
 }
 /* @keyframes fade {
